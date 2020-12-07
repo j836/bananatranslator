@@ -139,3 +139,19 @@ body {
     }
   }
   
+  
+@media only screen and (max-width:540px) {
+    html {
+        font-size:50.5%;
+    }
+    body {
+        letter-spacing: 2px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .txt {
+        width: 100%;
+        font-size: 2rem;
+    }
+}
