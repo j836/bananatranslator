@@ -1,0 +1,80 @@
+/*#firsth2
+{
+    color:blue;
+}
+*/
+/*
+.mydiv
+{
+    border:solid 2px blue;
+    margin:5px;
+    padding:10px;
+}
+
+*/
+/*div p{
+    color:black;
+}
+*/
+/* access all such pwhich are inside div*/
+
+/*
+.mycube
+{
+    width:50px;
+    height:50px;
+    background-color:blueviolet;
+    opacity:0.4;
+    position: absolute;
+    padding:20px;
+
+}
+
+.newdivclass
+{
+    border-radius: 10px;
+    background-color: aqua;
+   
+
+}
+
+.newparaclass
+{
+    font-weight:bold;
+    color:brown;
+}
+
+*/
+
+/* jQuery UI */
+
+#mydiv
+{
+    border:solid 2px purple;
+    padding:10px;
+    margin:10px;
+}
+
+
+#firstdiv
+{
+    border:solid 2px purple;
+    padding:10px;
+}
+#seconddiv
+{
+    border:solid 2px purple;
+    padding:10px;
+
+}
+
+.cube
+{
+    width:70px;
+    height:70px;
+    background-color: rgb(255,255,30);
+    padding:20px;
+    margin:20px;
+    display:inline-block;/*They become horizontally stacked*/
+
+}

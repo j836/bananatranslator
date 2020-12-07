@@ -1,3 +1,5 @@
+
+
 const txtinput = document.querySelector('.txt-input');
 const translatebtn = document.querySelector('.translate-btn');
 console.log(translatebtn)
@@ -16,6 +18,9 @@ function generateURL(text) {
 
 
 function clickHandler() {
+
+  
+
     //  alert('Here we go');
     if(txtinput.value === undefined || txtinput.value === "") {
         window.alert('Empty input!!Please enter text to get its translation');
