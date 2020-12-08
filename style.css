@@ -14,10 +14,11 @@
 
 body {
     font-family: 'BioRhyme',sans-serif;
-    background: url('4614a49a0b9341f7132f020568191cd4.jpg');
+    background-color:#beb292;
+    /* background: url('4614a49a0b9341f7132f020568191cd4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+    overflow-x: hidden; */
     color: var(--headcolor);
 }
 
@@ -178,9 +179,9 @@ body {
         width: 100%;
         font-size: 2rem;
     }
-    .input-header,.output-header {
+    /* .input-header,.output-header {
         font-size: 2rem;
-    }
+    } */
     .goes-here {
         display: flex;
         justify-content: center;
