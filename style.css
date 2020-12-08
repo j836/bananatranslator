@@ -3,7 +3,7 @@
 
 :root {
     --bgcolor:#FBBF24;
-    --headcolor:#78350F;
+    --headcolor:#622400;
 
 }
 
@@ -17,6 +17,8 @@ body {
     background: url('4614a49a0b9341f7132f020568191cd4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
+    color: var(--headcolor);
 }
 
 .header {
@@ -77,7 +79,7 @@ body {
 .translate-btn {
     padding: 1rem 2rem;
     font-size: 1.5rem;
-    background-color:black;
+    background-color:var(--headcolor);
     border-radius: 1rem;
     cursor: pointer;
     font-family: 'Yatra One', cursive;
@@ -107,43 +109,56 @@ body {
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-/* animations */
-.tilt-in-fwd-tr {
-	-webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+.footer {
+    width: 100%;
+    background-color: var(--bgcolor);
+    padding:1rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 2rem;
 }
 
+.footer-line {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 
-/**
- * ----------------------------------------
- * animation tilt-in-fwd-tr
- * ----------------------------------------
- */
- @-webkit-keyframes tilt-in-fwd-tr {
-    0% {
-      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-      opacity: 1;
-    }
-  }
-  @keyframes tilt-in-fwd-tr {
-    0% {
-      -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-              transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-              transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-      opacity: 1;
-    }
-  }
-  
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons ul {
+    display: flex;
+    flex-direction: row;
+}
+.social-icons ul li {
+    list-style: none;
+    padding: 0rem 2rem;
+   
+}
+
+.social-icons ul li i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 500ms;
+}
+
+.small {
+   
+    font-size: larger;
+}
+
+#instagram,#linkedin,#github {
+    color: black;
+}
+
+ 
   
 @media only screen and (max-width:540px) {
     html {
@@ -157,6 +172,16 @@ body {
     }
     .txt {
         width: 100%;
+        font-size: 2rem;
+    }
+    .input-header,.output-header {
+        font-size: 2rem;
+    }
+    .goes-here {
+        display: flex;
+        justify-content: center;
+    }
+    .footer {
         font-size: 2rem;
     }
 }
