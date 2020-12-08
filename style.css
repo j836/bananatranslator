@@ -20,6 +20,7 @@ body {
     background-size: cover;
     overflow-x: hidden; */
     color: var(--headcolor);
+    overflow-x: hidden;
 }
 
 .header {
@@ -41,6 +42,16 @@ body {
     margin:0.5rem 1rem;
 }
 
+.special {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banana-image {
+    max-width: 10rem;
+    position: relative;
+    bottom:28px;
+}
 
 .input-header,.output-header {
     font-size: 1.8rem;
@@ -162,7 +173,17 @@ body {
 #instagram,#linkedin,#github {
     color: black;
 }
-
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+   
+}
+:-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffc72c;
+}
  
   
 @media only screen and (max-width:540px) {
