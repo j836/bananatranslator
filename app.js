@@ -10,7 +10,7 @@ console.log(txtoutput);
 
 
 
-const serverurl = "https://lessonfourapi.prajwaljain.repl.co/translate/yoda.json?text=";
+const serverurl = "https://api.funtranslations.com/translate/minion.json?text=";
 
 function generateURL(text) {
     return serverurl + text;
